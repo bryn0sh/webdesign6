@@ -466,13 +466,65 @@
     <!-- /ПІДВАЛ -->
 
     <!-- =========MODAL-WINDOW========= -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button class="close-btn" data-modal-close>
           <svg class="close-icon" width="8px" height="8px">
             <use href="./images/sprite-svg/symbol-defs.svg#close"></use>
           </svg>
         </button>
+
+        <form class="modal-form">
+          <p class="form-action">
+            Leave your contacts and we will call you back
+          </p>
+          <label class="modal-form-field">
+            <span class="modal-form-input-desc"> Name</span>
+            <span class="modal-form-input-wrapper">
+              <input type="text" name="user_name" class="modal-form-input" />
+              <svg class="modal-form-input-icon" width="18px" height="18px">
+                <use href="./images/sprite-svg/symbol-defs.svg#person"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-form-field">
+            <span class="modal-form-input-desc"> Phone</span>
+            <span class="modal-form-input-wrapper">
+              <input type="tel" name="user_phone" class="modal-form-input" />
+              <svg class="modal-form-input-icon" width="18px" height="24px">
+                <use href="./images/sprite-svg/symbol-defs.svg#phone"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-form-field">
+            <span class="modal-form-input-desc"> Email</span>
+            <span class="modal-form-input-wrapper">
+              <input type="email" name="user_email" class="modal-form-input" />
+              <svg class="modal-form-input-icon" width="18px" height="24px">
+                <use href="./images/sprite-svg/symbol-defs.svg#email"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-form-field">
+            <span class="modal-form-input-desc">Comment</span>
+            <textarea
+              name="user_message"
+              class="modal-form-message"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+          <input
+            type="checkbox"
+            id="user-policy"
+            name="user_policy"
+            class="modal-form-check"
+          />
+          <label for="user-policy" class="modal-form-check-desc"
+            >I accept the terms and conditions of the
+            <a href="">Privacy Policy</a>
+          </label>
+          <button type="submit" class="modal-form-submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
